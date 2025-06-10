@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #FFFFFF;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+#carousel-container {
+    position: relative;
+    height: 65vh;
+    width: 100%;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 20px;
+    margin: 30px 0;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(27, 53, 126, 0.15);
+}
+
+div#carousel {
+    height: 100%;
+    width: 85%;
+    max-width: 700px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(27, 53, 126, 0.9);
+    color: white;
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(27, 53, 126, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.carousel-nav-btn:hover {
+    background: rgba(27, 53, 126, 1);
+    transform: translateY(-50%) scale(1.15);
+    box-shadow: 0 8px 25px rgba(27, 53, 126, 0.5);
+}
+
+.carousel-nav-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-prev {
+    left: 10%;
+}
+
+.carousel-next {
+    right: 10%;
+}
+
+div#carousel-title {
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+}
+
+div#carousel-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+div#carousel-title a:hover {
+    transform: translateY(-2px);
+}
+
+#carousel img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 20px;
+    border: #1B357E 4px solid;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 35px rgba(27, 53, 126, 0.25);
+}
+
+#carousel img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 50px rgba(27, 53, 126, 0.35);
+    border-color: #667eea;
+}
+
+header {
+    background: #FFFFFF;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0px 2px 20px 0px rgba(171, 171, 171, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+header div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80vw;
+}
+
+header ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+    display: inline-block;
+}
+
+header nav a {
+    color: #1351d8;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 16px;
+    margin-right: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background: linear-gradient(135deg, #1351d8, #1b357e);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+header nav a:hover {
+    color: #1b357e;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 22px;
+    transform: translateY(-2px);
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+main {
+    min-height: calc(100% - 167px);
+    padding: 0 25px;
+}
+
+footer {
+    background: #1B357E;
+    padding: 31px;
+}
+
+footer div {
+    display: inline;
+    float: right;
+    margin-right: 40px;
+}
+
+nav#social {
+    display: inline;
+    width: 80%;
+}
+
+nav#social ul img {
+    width: 28px;
+}
+
+span.redesociais {
+    color: #ffffff;
+    vertical-align: super;
+}
+
+button {
+    background: linear-gradient(135deg, #1351d8, #1b357e);
+    color: #fff;
+    border: 0px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    padding: 12px 24px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(19, 81, 216, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1b357e, #0f2557);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(19, 81, 216, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #1351d8, #1b357e);
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #1b357e, #0f2557);
+}
+
+@media (max-width: 1500px) {
+    header nav a {
+        font-size: 18px;
+    }
+
+    #carousel img {
+        height: 420px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header nav a {
+        font-size: 21px;
+    }
+
+    div#carousel-title {
+        font-size: 32px;
+    }
+
+    footer {
+        padding: 34px;
+    }
+
+    .carousel-nav-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .carousel-prev {
+        left: 8%;
+    }
+
+    .carousel-next {
+        right: 8%;
+    }
+
+    #carousel img {
+        height: 350px;
+    }
+
+    #carousel-container {
+        height: 55vh;
+    }
+}
+
+@media (max-width: 840px) {
+    header nav a {
+        font-size: 18px;
+    }
+
+    #carousel img {
+        height: 280px;
+    }
+
+    div#carousel-title {
+        font-size: 24px;
+    }
+
+    .carousel-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .carousel-prev {
+        left: 5%;
+    }
+
+    .carousel-next {
+        right: 5%;
+    }
+
+    #carousel-container {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 560px) {
+    .logo {
+        width: 80px;
+    }
+
+    header nav {
+        padding-left: 45px;
+    }
+
+    #carousel-container {
+        width: 100%;
+        margin: 15px 0;
+        height: 45vh;
+    }
+
+    div#carousel {
+        width: 90%;
+    }
+
+    #carousel img {
+        height: 220px;
+    }
+
+    .carousel-prev {
+        left: 3%;
+    }
+
+    .carousel-next {
+        right: 3%;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer div {
+        margin-right: 20px;
+    }
+
+    nav#social ul {
+        gap: 10px;
+    }
+
+    nav#social ul img {
+        width: 28px;
+        height: 28px;
+    }
+
+    span.redesociais {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 344px) {
+    .logo {
+        width: 60px;
+    }
+
+    header nav {
+        padding-left: 20px;
+        width: calc(100% - 80px);
+    }
+
+    header nav a {
+        font-size: 15px;
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    header nav a:hover {
+        font-size: 16px;
+    }
+
+    #carousel-container {
+        width: 100%;
+        height: 40vh;
+        margin: 10px 0;
+    }
+
+    #carousel img {
+        height: 180px;
+    }
+
+    div#carousel-title {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    span.redesociais {
+        font-size: 12px;
+    }
+
+    nav#social ul img {
+        width: 24px;
+        height: 24px;
+    }
+
+    footer {
+        padding: 18px 10px;
+    }
+
+    footer div {
+        margin-right: 10px;
+    }
+
+    footer div img {
+        width: 60px;
+    }
+
+    .carousel-nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .carousel-prev {
+        left: 2%;
+    }
+
+    .carousel-next {
+        right: 2%;
+    }
+}
