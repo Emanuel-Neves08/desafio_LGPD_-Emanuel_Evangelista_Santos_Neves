@@ -46,7 +46,7 @@ main div {
 }
 .forms {
   display: flex;
-  flex-direction: row; /* ou 'row' se quiser horizontal */
+  flex-direction: row;
   gap: 15px;
   text-align: left;
   font-size: 14px;
@@ -58,8 +58,8 @@ main div {
 }
 
 .formulario {
-  text-align: justify; /* Cor de fundo cinza claro */
-  padding: 20px;             /* Espaçamento interno para não ficar colado nas bordas */
+  text-align: justify; 
+  padding: 20px;            
   border-radius: 8px;
 }
 .background-section {
@@ -91,10 +91,11 @@ main div {
   margin-left: 60px;
 }
 
+
 @media (max-width: 1500px) {
   footer {
-    padding-bottom: 41px;
-  }
+        padding: 34px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -178,6 +179,13 @@ main div {
     height: 10px;
     margin-left: 60px;
   }
+  footer {
+        padding: 25px 15px;
+    }
+
+    footer div {
+        margin-right: 20px;
+    }
 
   .button-send {
     width: 200px;
