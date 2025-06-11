@@ -328,7 +328,6 @@ button:active {
 
     #carousel img {
         height: 550px;
-        /* ou o valor que quiser */
         width: 100%;
         object-fit: cover;
         object-position: center;
@@ -383,7 +382,7 @@ button:active {
 
     #carousel img {
         height: 450px;
-        /* maior que o original 350px */
+     
     }
 
     .carousel-prev {
