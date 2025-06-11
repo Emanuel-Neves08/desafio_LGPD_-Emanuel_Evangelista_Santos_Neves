@@ -66,6 +66,8 @@ main div {
   background-color:  #f0f0f0;
   padding: 20px;
   border-radius: 8px;
+ font-size: 15px;
+  font-family: "Open Sans", sans-serif;
 }
 .linkTermos {
   text-decoration: none;
@@ -85,7 +87,7 @@ main div {
 .button-send {
   width: 200px;
   height: 40px;
-  margin-right: 8px;
+  margin-right: 80px;
   margin-left: 60px;
 }
 

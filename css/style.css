@@ -25,6 +25,7 @@ body {
     transform: scale(1.05);
 }
 
+
 #carousel-container {
     position: relative;
     height: 65vh;
@@ -162,7 +163,7 @@ ul {
 
 header nav a {
     color: #1351d8;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     font-weight: 900;
     margin-left: 16px;
@@ -193,6 +194,7 @@ header nav a:hover {
     font-weight: 900;
     font-size: 22px;
     transform: translateY(-2px);
+    background-color: #dadfe9;
 }
 
 nav li {
