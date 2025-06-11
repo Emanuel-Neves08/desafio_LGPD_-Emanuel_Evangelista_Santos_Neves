@@ -119,12 +119,12 @@ function UpdateCompareTable() {
     document.getElementById("compare_preco_1").innerText = `R$ ${car2.preco.toLocaleString('pt-BR')}`;
 
 
-    
+
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     checkboxes.forEach(checkbox => {
         checkbox.checked = false;
     });
 
-   
+
     carArr = [];
 }

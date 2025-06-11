@@ -7,7 +7,7 @@ class Carousel {
             if (arr.length > 0) {
                 Carousel._sequence = 0;
                 Carousel._size = arr.length;
-                Carousel.ShowCurrent(); 
+                Carousel.ShowCurrent();
                 Carousel._interval = setInterval(function () { Carousel.Next(); }, 6000); // 6 segundos por imagem
 
 
