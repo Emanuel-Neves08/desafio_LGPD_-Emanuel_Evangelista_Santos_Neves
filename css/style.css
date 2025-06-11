@@ -122,7 +122,6 @@ div#carousel-title a:hover {
     display: block;
     max-width: 100%;
     border-radius: 20px;
-    border: #1B357E 4px solid;
     transition: all 0.4s ease;
     box-shadow: 0 12px 35px rgba(27, 53, 126, 0.25);
 }
